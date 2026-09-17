@@ -57,15 +57,19 @@ export default function Hero() {
             Clean, high-performance actives made the way nature intended.
           </motion.p>
 
-          <motion.p
+          <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.85, delay: 0.85 }}
-            className="mt-3 max-w-[480px] text-[1.05rem] leading-relaxed text-ink"
+            className="mt-4 max-w-[480px]"
           >
-            No cells. No harsh chemicals. No shortcuts.{" "}
-            <span className="text-green">Just pure ingredients.</span>
-          </motion.p>
+            <p className="text-[1.05rem] leading-relaxed text-ink-dim">
+              No cells. No harsh chemicals. No shortcuts.
+            </p>
+            <p className="mt-2 font-display text-xl font-semibold tracking-tight text-green sm:text-[1.35rem]">
+              Just pure ingredients.
+            </p>
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 12 }}
