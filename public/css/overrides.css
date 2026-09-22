@@ -1,0 +1,42 @@
+/* Clone overrides — marquees, visibility, local logo crop */
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-logo {
+  width: auto;
+  height: 40px;
+  max-height: 40px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+@keyframes cellarim-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.marquee-container {
+  display: flex !important;
+  width: max-content;
+  animation: cellarim-marquee 28s linear infinite;
+}
+
+.marquee-wrapper.green .marquee-container {
+  animation-duration: 32s;
+}
+
+.w-layout-cell,
+.features-box,
+.team-card {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.w-background-video--control {
+  display: none;
+}
